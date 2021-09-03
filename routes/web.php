@@ -16,19 +16,41 @@ use Illuminate\Support\Facades\Route;
 
 //  HOME
 Route::get('/', function () {
-    return view('home');
+
+    $data = [
+
+        'titleHome' => 'HOME'
+
+    ];
+
+    return view('home', $data);
+
 })->name('homepage');
 
 
 
 // ABOUT
 Route::get('/about.blade.php', function () {
-    return view('about');
+    
+    $data = [
+
+        'titleAbout' => 'ABOUT'
+
+    ];
+    
+    return view('about', $data);
 })->name('chi-siamo');
 
 
 
 // CONTACT
 Route::get('/contact.blade.php', function () {
-    return view('contact');
+    
+    $data = [
+
+        'titleContact' => 'CONTACT'
+
+    ];
+    
+    return view('contact', $data);
 })->name('contatti');
