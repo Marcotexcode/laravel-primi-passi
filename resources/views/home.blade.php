@@ -13,6 +13,7 @@
                 box-sizing: border-box;
                 background-color: rgb(201, 200, 34);
             }
+
             .header {
                 display: flex;
                 justify-content: space-around;
@@ -23,7 +24,6 @@
 
             .menu {
                 display: flex;
-
             }
 
             .menu-li {
@@ -44,7 +44,6 @@
                 align-items: center;
                 height: calc(100vh - 70px);
                 align-items: center;
-                
             }
 
             .main-title {
@@ -54,7 +53,9 @@
 
 
         </style>
+        
     </head>
+
     <body>
         
         <div class="container">

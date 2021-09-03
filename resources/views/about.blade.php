@@ -12,8 +12,8 @@
                 padding: 0;
                 box-sizing: border-box;
                 background-color: rgb(96, 96, 96);
-
             }
+
             .header {
                 display: flex;
                 justify-content: space-around;
@@ -49,7 +49,6 @@
                 align-items: center;
                 height: calc(100vh - 70px);
                 align-items: center;
-                
             }
 
             .main-title {
@@ -60,35 +59,36 @@
         </style>
 
     </head>
-<body>
+    
+    <body>
 
-    <div class="container">
+        <div class="container">
 
-        <div class="header">
+            <div class="header">
 
-            <div class="logo">
+                <div class="logo">
 
-                <h2>{{$titleAbout}}</h2>
-                    
+                    <h2>{{$titleAbout}}</h2>
+                        
+                </div>
+
+                <ul class="menu">
+
+                    <li class="menu-li"><a class="menu-li-a" href="{{route('homepage')}}">Home</a></li>
+                    <li class="menu-li"><a class="menu-li-a" href="{{route('chi-siamo')}}">About</a></li>
+                    <li class="menu-li"><a class="menu-li-a" href="{{route('contatti')}}">Contatti</a></li>
+
+                </ul>
+
             </div>
 
-            <ul class="menu">
+            <div class="main">
 
-                <li class="menu-li"><a class="menu-li-a" href="{{route('homepage')}}">Home</a></li>
-                <li class="menu-li"><a class="menu-li-a" href="{{route('chi-siamo')}}">About</a></li>
-                <li class="menu-li"><a class="menu-li-a" href="{{route('contatti')}}">Contatti</a></li>
+                <h3 class="main-title">{{$descrizione}}</h3>
 
-            </ul>
+            </div>
 
         </div>
 
-        <div class="main">
-
-            <h3 class="main-title">{{$descrizione}}</h3>
-
-        </div>
-
-    </div>
-
-</body>
+    </body>
 </html>

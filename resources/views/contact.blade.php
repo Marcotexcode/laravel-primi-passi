@@ -13,6 +13,7 @@
                 box-sizing: border-box;
                 background-color: rgb(51, 110, 122);
             }
+
             .header {
                 display: flex;
                 justify-content: space-around;
@@ -23,7 +24,6 @@
 
             .menu {
                 display: flex;
-
             }
 
             .menu-li {
@@ -83,6 +83,7 @@
         </style>
 
     </head>
+    
     <body>
         
         <div class="container">

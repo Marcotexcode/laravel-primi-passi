@@ -61,7 +61,7 @@ Route::get('/contact.blade.php', function () {
 
         'titolo' => 'contatti',
 
-        'contatti' => ['facebook', 'twitter', 'instagram', 'telefono']
+        'contatti' => ['facebook', 'twitter', 'instagram', 'telefono', 'mail']
 
     ];
     
