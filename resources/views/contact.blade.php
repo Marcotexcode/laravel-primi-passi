@@ -11,6 +11,7 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+                background-color: rgb(51, 110, 122);
             }
             .header {
                 display: flex;
@@ -41,6 +42,44 @@
                 color: gray;
             }
 
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(100vh - 70px);
+                align-items: center;
+                
+            }
+
+            .contatti {
+                display: flex;
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .contatti-title {
+                font-size: 30px;
+                text-transform: uppercase;
+            }
+
+            .contatti-elenco {
+                list-style: none;
+                padding: 20px;
+                display: flex;
+            }
+
+            .contatti-elenco-li {
+                margin: 0px 30px;
+                font-size: 20px;
+            }
+
+            .contatti-elenco-li-a {
+                text-transform: uppercase;
+                text-decoration: none;
+                color: black;
+            }
+
+
         </style>
 
     </head>
@@ -64,6 +103,26 @@
 
                 </ul>
 
+            </div>
+
+            <div class="main">
+
+                <div class="contatti">
+
+                    <h3 class="contatti-title">{{$titolo}}</h3>
+
+                    <ul class="contatti-elenco">
+
+                        @foreach($contatti as $contact )
+
+                            <li class="contatti-elenco-li"><a class="contatti-elenco-li-a" href="">{{$contact}}</a></li>
+
+                        @endforeach
+
+                    </ul>
+
+                </div>
+               
             </div>
             
         </div>

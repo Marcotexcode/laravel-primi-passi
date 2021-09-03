@@ -11,6 +11,8 @@
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
+                background-color: rgb(96, 96, 96);
+
             }
             .header {
                 display: flex;
@@ -41,6 +43,20 @@
                 color: white;
             }
 
+            .main {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: calc(100vh - 70px);
+                align-items: center;
+                
+            }
+
+            .main-title {
+                text-transform: uppercase;
+                font-size: 50px;
+            }
+
         </style>
 
     </head>
@@ -63,6 +79,12 @@
                 <li class="menu-li"><a class="menu-li-a" href="{{route('contatti')}}">Contatti</a></li>
 
             </ul>
+
+        </div>
+
+        <div class="main">
+
+            <h3 class="main-title">{{$descrizione}}</h3>
 
         </div>
 

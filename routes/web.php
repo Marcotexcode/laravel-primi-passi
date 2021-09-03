@@ -17,9 +17,12 @@ use Illuminate\Support\Facades\Route;
 //  HOME
 Route::get('/', function () {
 
+    // Passaggio titolo logo
     $data = [
 
-        'titleHome' => 'HOME'
+        'titleHome' => 'HOME',
+
+        'presentazione' => 'Ciao Sono marco'
 
     ];
 
@@ -32,13 +35,18 @@ Route::get('/', function () {
 // ABOUT
 Route::get('/about.blade.php', function () {
     
+    // Passaggio titolo logo
     $data = [
 
-        'titleAbout' => 'ABOUT'
+        'titleAbout' => 'ABOUT',
+
+        'descrizione' => 'questo è il mio primo sito con Laravel'
+
 
     ];
     
     return view('about', $data);
+
 })->name('chi-siamo');
 
 
@@ -46,11 +54,17 @@ Route::get('/about.blade.php', function () {
 // CONTACT
 Route::get('/contact.blade.php', function () {
     
+    // Passaggio titolo logo
     $data = [
 
-        'titleContact' => 'CONTACT'
+        'titleContact' => 'CONTACT',
+
+        'titolo' => 'contatti',
+
+        'contatti' => ['facebook', 'twitter', 'instagram', 'telefono']
 
     ];
     
     return view('contact', $data);
+
 })->name('contatti');
